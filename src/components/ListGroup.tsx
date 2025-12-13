@@ -2,14 +2,22 @@ function ListGroup(){
     // Something to note about react: it can't return more than one element like having this class
     // return both a ul and a h1
     // you can avoid that by using a div
+    // but a better way of doing it is using a fragment
+    const items = [
+        'New York',
+        'San Francisco',
+        'Tokyo',
+        'London',
+        'Paris'
+    ];
+
     return (
-        <ul className="list-group">
-            <li className="list-group-item">An item</li>
-            <li className="list-group-item">A second item</li>
-            <li className="list-group-item">A third item</li>
-            <li className="list-group-item">A fourth item</li>
-            <li className="list-group-item">And a fifth one</li>
-        </ul>
+        <>
+            <h1>List</h1>
+            <ul className="list-group">
+                {items.map(item => <li className="list-group-item" key={item}>{item}</li>)}
+            </ul>
+        </>
     );
 }
 
