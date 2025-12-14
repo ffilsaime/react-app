@@ -1,4 +1,5 @@
 import ListGroup from './components/ListGroup';
+import Alert from "./components/Alert.tsx";
 
 function App(){
     //NOTE: You should always close your react component or you'll get a compilation error
@@ -16,6 +17,8 @@ function App(){
 
     return (
         <div>
+            <Alert text="Hello World"/>
+            <br/>
             <ListGroup items={items} heading='Cities' onSelectItem={handleSelectItem}/>
         </div>
     );
