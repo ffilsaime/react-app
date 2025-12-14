@@ -17,7 +17,9 @@ function App(){
 
     return (
         <div>
-            <Alert>Hello World</Alert>
+            <Alert>
+                Hello <span>World</span>
+            </Alert>
             <br/>
             <ListGroup items={items} heading='Cities' onSelectItem={handleSelectItem}/>
         </div>

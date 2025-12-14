@@ -1,5 +1,7 @@
+import type {ReactNode} from "react";
+
 interface AlertProps {
-    children: string;
+    children: ReactNode;
 }
 
 function Alert({children} : AlertProps){
