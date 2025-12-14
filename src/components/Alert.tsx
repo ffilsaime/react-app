@@ -1,10 +1,10 @@
 interface AlertProps {
-    text: string;
+    children: string;
 }
 
-function Alert({text} : AlertProps){
+function Alert({children} : AlertProps){
     return (
-        <div className="alert alert-primary">{ text }</div>
+        <div className="alert alert-primary">{ children }</div>
     )
 }
 
