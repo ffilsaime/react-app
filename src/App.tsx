@@ -1,27 +1,12 @@
-import ListGroup from './components/ListGroup';
-import Alert from "./components/Alert.tsx";
+import Square from "./components/Square.tsx";
+import Board from "./components/Board.tsx";
 
 function App(){
-    //NOTE: You should always close your react component or you'll get a compilation error
-    let items = [
-        'New York',
-        'San Francisco',
-        'Tokyo',
-        'London',
-        'Paris'
-    ];
-
-    const handleSelectItem = (item: string) => {
-        console.log(item);
-    }
-
     return (
         <div>
-            <Alert>
-                Hello <span>World</span>
-            </Alert>
+            {/*<Button />*/}
             <br/>
-            <ListGroup items={items} heading='Cities' onSelectItem={handleSelectItem}/>
+            <Board />
         </div>
     );
 }
