@@ -10,8 +10,6 @@ export default function ContactForm(){
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // TODO: Add logic to validate inputs and display submitted data
-        // HINT: You can use the setError function
         if (email.length == 0 || name.length == 0 || message.length == 0){
             setError("All fields are required.");
         } else {
@@ -21,9 +19,6 @@ export default function ContactForm(){
             setMessage("");
             setError("");
         }
-
-        // HINT: You can use the setSubmittedData function as below
-        // setSubmittedData({ name, email, message });
     };
 
     return (
